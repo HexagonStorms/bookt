@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use File;
+use File, Log;
 
 class AngularController extends Controller
 {
@@ -13,6 +13,7 @@ class AngularController extends Controller
      */
     public function serve()
     {
+        Log::info(public_path('dist/index.html'));
         return File::get(public_path('dist/index.html'));
     }
 }
