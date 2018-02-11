@@ -8,6 +8,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
+const appRoutes: Routes = [
+    {
+        path: '',
+        component: AppComponent
+    },
+];
+
 @NgModule({
   declarations: [
     AppComponent
@@ -18,7 +25,8 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     MatButtonModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    RouterModule.forRoot(appRoutes)
   ],
   exports: [
     MatButtonModule,
