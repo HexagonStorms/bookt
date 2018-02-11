@@ -7,17 +7,37 @@ import { HttpModule } from '@angular/http';
 import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { HomeComponent } from './pages/home/home.component';
+import { FaqComponent } from './pages/faq/faq.component';
+import { AboutComponent } from './pages/about/about.component';
+import { HowItWorksComponent } from './pages/how-it-works/how-it-works.component';
 
 const appRoutes: Routes = [
     {
         path: '',
-        component: AppComponent
+        component: HomeComponent
     },
+    {
+        path: 'how-it-works',
+        component: HowItWorksComponent
+    },
+    {
+        path: 'faq',
+        component: FaqComponent
+    },
+    {
+        path: 'about',
+        component: AboutComponent
+    }
 ];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    FaqComponent,
+    AboutComponent,
+    HowItWorksComponent
   ],
   imports: [
     BrowserAnimationsModule,
