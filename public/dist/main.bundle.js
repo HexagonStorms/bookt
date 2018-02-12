@@ -276,7 +276,7 @@ exports.FaqComponent = FaqComponent;
 /***/ "../../../../../angular/app/pages/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<section class=\"bg-primary row search-section justify-content-md-center\">\n    <div class=\"col-8 text-center\">\n        <h1 class=\"my-5\">\n            Finding college textbooks at the cheapest price.\n            <br />Guaranteed.\n        </h1>\n        <div class=\"input-group input-group-lg mb-3\">\n            <input type=\"text\" class=\"form-control\" aria-label=\"Amount (to the nearest dollar)\">\n            <div class=\"input-group-append\">\n                <button class=\"btn btn-outline-secondary\" type=\"button\">Button</button>\n            </div>\n        </div>\n    </div>\n</section>\n"
+module.exports = "<section class=\"bg-primary row search-section justify-content-md-center\">\n    <div class=\"col-8 text-center\">\n        <h1 class=\"my-5\">\n            Finding college textbooks at the cheapest price.\n            <br />Guaranteed.\n        </h1>\n        <div class=\"input-group input-group-lg mb-3\">\n            <input type=\"text\" class=\"form-control\" aria-label=\"Enter \" placeholder=\"Enter ISBN, Title, or Author's Name\">\n            <div class=\"input-group-append\">\n                <button class=\"btn btn-secondary\" type=\"button\">+</button>\n            </div>\n        </div>\n    </div>\n</section>\n"
 
 /***/ }),
 
